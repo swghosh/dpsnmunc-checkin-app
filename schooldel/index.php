@@ -52,15 +52,14 @@ $cnumber = htmlspecialchars($_POST['cnumber']);
                 <?php
                 $string = "<label for=\"name\" id=\"name\">Name</label><br>
                 <input type=\"text\" name=\"name[]\" placeholder=\"full name\" id=\"name\"><br><br>
-                <label for=\"committee\">Committee</label><br>
+                <label for=\"committee\">Event</label><br>
                 <select name=\"committee[]\">
-                    <option value=\"general assembly\">General Assembly - DISEC</option>
-                    <option value=\"security council\">Security Council</option>
-                    <option value=\"ecosoc\">ECOSOC</option>
-                    <option value=\"international press\">International Press Corps</option>
-                    <option value=\"coc\">Clash of Caricatures</option>
-                    <option value=\"photo\">Photography Videography</option>
-                    <option value=\"faculty\">Faculty Advisor</option>
+                    <option value=\"facculty\">Faculty Advisor</option>
+                    <option value=\"infiinvest\">Infi-Invest</option>
+                    <option value=\"infilaunch\">Infi-Launch</option>
+                    <option value=\"infiepaper\">Infi-E-Paper</option>
+                    <option value=\"infiquiz\">Infi-Quiz</option>
+                    <option value=\"inficonnect\">Infi-Connect</option>
                 </select><br><hr><br>";
                 for($i = 1; $i <= $number; $i++) {
                   echo $string."\n";
@@ -79,6 +78,6 @@ $cnumber = htmlspecialchars($_POST['cnumber']);
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script src="base.js"></script>
+        <script src="../base.js"></script>
     </body>
 </html>

@@ -16,7 +16,6 @@ if(empty($_POST['name']) || empty($_POST['number']) || empty($_POST['school']) |
 
 $number = htmlspecialchars($_POST['number']);
 $school = htmlspecialchars($_POST['school']);
-$type = 'schooldel';
 ?>
 <!doctype html>
 <html>
@@ -24,7 +23,6 @@ $type = 'schooldel';
         <title>Infinnovation'16 e-Check-In Pass</title>
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" href="../style2.css" type="text/css" />
-        <link rel="icon" href="http://swghosh.cu.cc/favicon.png" type="image/png" />
         <meta name="theme-color" content="#336">
     </head>
     <body>
@@ -37,7 +35,7 @@ $type = 'schooldel';
         for($i = 0; $i < sizeof($_POST['name']); $i++) {
           $name = $_POST['name'][$i];
           $committee = $_POST['committee'][$i];
-          $sql = "INSERT INTO `participants` (`name`,`number`,`school`,`committee`,`type`) VALUES ('$name','$number','$school','$committee','$type');";
+          $sql = "INSERT INTO `participants` (`name`,`number`,`school`,`committee`) VALUES ('$name','$number','$school','$committee';";
           if(mysqli_query($db, $sql) == false) {
               die("Form Data Submission Error.");
           }
@@ -46,6 +44,5 @@ $type = 'schooldel';
         ?>
       </ul>
       <p>Welcome aboard!</p>
-      <p><small><a href="/">another check-in</a></small></p>
     </body>
 </html>
