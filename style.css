@@ -4,13 +4,16 @@ body {
     margin: 0%;
     background-color: #111;
 }
+.wrapper {
+    background-image: url(images/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
 .header {
     width: 100%;
-    background-color: #222;
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: rgba(10%, 10%, 10%, 0.8);
+    min-height: 100%;
     text-align: center;
 }
 .header > h1 {
@@ -19,7 +22,6 @@ body {
     margin: 5%;
     margin-bottom: 2%;
     margin-top: 0%;
-    background-color: rgba(0, 0, 0, 0.4);
 }
 .header > h1 > small {
     font-size: 50%;
@@ -38,30 +40,32 @@ body {
     text-align: center;
 }
 .header > #imageatr > img {
+    width: 20%;
     margin-bottom: 0%;
     margin-left: 5%;
-    background-color: rgba(100%, 100%, 100%, 0.6);
-    border-radius: 100%;
+    background-color: rgba(10%, 10%, 10%, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0%, 0%, 0%, 0.9);
 }
 .navbar {
     width: 100%;
     box-shadow: 0 0 40px rgba(0,0,0,0.9);
 }
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(8%, 8%, 10%, 0.96);
+    background-color: #222;
     font-family: 'Raleway';
 }
-li {
+.navbar li {
     float: left;
 }
-li:hover {
+.navbar li:hover {
     background-color: #058;
 }
-li > a {
+.navbar li > a {
     display: block;
     color: #fff;
     text-align: center;
@@ -74,20 +78,18 @@ li > a {
     color: #fff;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     text-transform: lowercase;
-}
-.flogolink:hover {
-    text-decoration: underline;
+    font-family: 'Amatic SC';
 }
 #togglemenu {
     display: none;
 }
 #togglemenu > #menubutton {
-    text-align: right;
+    text-align: left;
+    float: left;
 }
 #togglemenu:hover {
-    background-color: rgba(8%, 8%, 10%, 0.96);
+    background-color: #222;;
 }
 #menubutton {
     font-size: 200%;
@@ -96,19 +98,20 @@ li > a {
 #menubutton > small {
     font-size: 100%;
 }
+
 #flogo {
     display: none;
-    background-color: rgba(8%, 8%, 10%, 0.96);
-}
-#flogo a {
-    color: #fff;
-    text-decoration: none;
+    background-color: #222;;
 }
 .content1 {
-    background-color: #236;
+    overflow-x: auto;
+    min-width: 100%;
+    background-color: #236;;
     color: #fff;
     background-attachment: fixed;
+    min-height: 80vh;
     height: 120%;
+    text-align: center;
 }
 .foot {
     width: 100%;
@@ -117,12 +120,6 @@ li > a {
     text-align: center;
     font-family: 'Raleway';
     height: 120%;
-}
-.foot a {
-    color: #fff;
-}
-.foot a:hover {
-    text-decoration: none;
 }
 .foot > h1 {
     margin-left: 5%;
@@ -133,6 +130,12 @@ li > a {
     text-align: left;
     margin-right: 5%;
     margin-left: 5%;
+}
+.foot a {
+    color: inherit;
+}
+.foot a:hover {
+    color: #ccc;
 }
 .heart {
     color: #f30;
