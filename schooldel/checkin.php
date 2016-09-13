@@ -44,5 +44,7 @@ $school = htmlspecialchars($_POST['school']);
         ?>
       </ul>
       <p>Welcome aboard!</p>
+      <p><small>You may exit this app at this moment.<br>Please do not press the back button at this time.<br>Please show us this page at our check-in desk.<br></small></p>
+      <p>Thank You for your co-operation!</p>
     </body>
 </html>

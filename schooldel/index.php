@@ -63,13 +63,13 @@ if(mysqli_num_rows($res) != 1) {
                 <input type=\"text\" name=\"name[]\" placeholder=\"full name\" id=\"name\"><br><br>
                 <label for=\"committee\">Event</label><br>
                 <select name=\"committee[]\">
-                    <option value=\"facculty\">Faculty Advisor</option>
+                    <option value=\"faculty\">Faculty Advisor</option>
                     <option value=\"infiinvest\">Infi-Invest</option>
                     <option value=\"infilaunch\">Infi-Launch</option>
                     <option value=\"infiepaper\">Infi-E-Paper</option>
                     <option value=\"infiquiz\">Infi-Quiz</option>
                     <option value=\"inficonnect\">Infi-Connect</option>
-                </select><br><br>";
+                </select><br><br><br><br>";
                 for($i = 1; $i <= $number; $i++) {
                   echo $string."\n";
                 }
