@@ -1,20 +1,29 @@
 <?php
 function form_error() {
-//    die(header('Location: ../wrong.html'));
+    die(header('Location: ../wrong.html'));
 }
 
 //Form Validation
-if(isset($_POST['school']) == false || isset($_POST['number']) == false || isset($_POST['cnumber']) == false) {
+if(isset($_POST['school']) == false || isset($_POST['number']) == false || isset($_POST['cnumber']) == false || isset($_POST['uid']) == false) {
     form_error();
 }
 
-if(empty($_POST['school']) || empty($_POST['number']) || empty($_POST['cnumber'])) {
+if(empty($_POST['school']) || empty($_POST['number']) || empty($_POST['cnumber'])  || empty($_POST['uid'])) {
     form_error();
 }
 
 $number = intval(htmlspecialchars($_POST['number']));
 $school = htmlspecialchars($_POST['school']);
 $cnumber = htmlspecialchars($_POST['cnumber']);
+
+//Form unique id validation
+include_once('../db.php');
+$uid = htmlspecialchars($_POST['uid']);
+$sql = "SELECT * FROM schools WHERE uid = '$uid' AND name = '$school';";
+$res = mysqli_query($db, $sql);
+if(mysqli_num_rows($res) != 1) {
+    form_error();
+}
 
 ?>
 <!DOCTYPE html>
