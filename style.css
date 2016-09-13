@@ -144,12 +144,12 @@ body {
 }
 .content1 form {
     margin: 6%;
-    font-size: 160%;
+    font-size: 140%;
     font-family: 'Raleway';
 }
 .content1 p {
     margin: 6%;
-    font-size: 160%;
+    font-size: 140%;
     font-family: 'Raleway';
 }
 .button {
@@ -157,6 +157,7 @@ body {
     font-family: inherit;
     border-radius: 5px;
     background-color: rgba(30%, 30%, 30%, 0.6);
+    font-size: 120%;
     color: #fff;
     border-color: #000;
 }
@@ -166,7 +167,7 @@ input[type=text] {
     border-bottom: 2px solid #fff;
     background-color: rgba(0, 0, 0, 0);
     font-family: 'Raleway';
-    font-size: 120%;
+    font-size: 110%;
 
 }
 input[type=number] {
@@ -174,5 +175,5 @@ input[type=number] {
     border-bottom: 2px solid #fff;
     background-color: rgba(0, 0, 0, 0);
     font-family: 'Raleway';
-    font-size: 120%;
+    font-size: 110%;
 }

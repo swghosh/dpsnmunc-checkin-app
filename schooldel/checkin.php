@@ -35,7 +35,7 @@ $school = htmlspecialchars($_POST['school']);
         for($i = 0; $i < sizeof($_POST['name']); $i++) {
           $name = $_POST['name'][$i];
           $committee = $_POST['committee'][$i];
-          $sql = "INSERT INTO `participants` (`name`,`number`,`school`,`committee`) VALUES ('$name','$number','$school','$committee';";
+          $sql = "INSERT INTO `participants` (`name`,`number`,`school`,`committee`) VALUES ('$name','$number','$school','$committee');";
           if(mysqli_query($db, $sql) == false) {
               die("Form Data Submission Error.");
           }

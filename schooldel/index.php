@@ -69,7 +69,7 @@ if(mysqli_num_rows($res) != 1) {
                     <option value=\"infiepaper\">Infi-E-Paper</option>
                     <option value=\"infiquiz\">Infi-Quiz</option>
                     <option value=\"inficonnect\">Infi-Connect</option>
-                </select><br><hr><br>";
+                </select><br><br>";
                 for($i = 1; $i <= $number; $i++) {
                   echo $string."\n";
                 }
