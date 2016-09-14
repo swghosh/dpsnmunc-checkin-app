@@ -1,5 +1,5 @@
 <?php
-include_once('../db.php');
+include_once('db.php');
 $sql = "SELECT * FROM `schools` ORDER by `name`;";
 $res = mysqli_query($db, $sql);
 $schools = array();
