@@ -37,7 +37,7 @@ $schools = array();
         <div class="content1">
             <br>
             <script src="formvalidate.js"></script>
-            <form id="application" method="POST" action="schooldel/index.php" onsubmit="return form_validate_school()">
+            <form id="application" method="POST" action="schooldel/index.php" onsubmit="return formValidateSchool()">
                 <label for="school">Your school's name</label><br>
                 <select name="school">
                     <?php
@@ -72,5 +72,10 @@ $schools = array();
         <script src="base.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script src="suggestion.js"></script>
+        <?php
+            if(isset($_GET['uidmismatch'])) {
+                echo "<script>uidMismatch();</script>\n";
+            }
+        ?>
     </body>
 </html>

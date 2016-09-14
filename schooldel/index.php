@@ -22,7 +22,7 @@ $uid = htmlspecialchars($_POST['uid']);
 $sql = "SELECT * FROM schools WHERE uid = '$uid' AND name = '$school';";
 $res = mysqli_query($db, $sql);
 if(mysqli_num_rows($res) != 1) {
-    form_error();
+    die(header('Location: ../?uidmismatch'));
 }
 
 ?>
@@ -58,7 +58,7 @@ if(mysqli_num_rows($res) != 1) {
         <div class="content1">
             <br>
             <script src="../formvalidate.js"></script>
-            <form id="application" method="POST" action="checkin.php" onsubmit="return form_validate_participant()">
+            <form id="application" method="POST" action="checkin.php" onsubmit="return formValidateParticipant()">
                 <?php
                 $string = "<label for=\"name\" id=\"name\">Name</label><br>
                 <input type=\"text\" name=\"name[]\" placeholder=\"full name\" id=\"name\"><br><br>

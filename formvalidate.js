@@ -1,11 +1,14 @@
-function name_validate(text) {
+// checks whether the name passed in argument starts in capital or not
+function nameValidate(text) {
     var x = text.charAt(0);
     if("A" <= x && x <= "Z") {
         return true;
     }
     return false;
 }
-function form_validate_school() {
+
+// performs validation on the form in the homepage
+function formValidateSchool() {
     var number = document.forms["application"]["number"].value;
     var cnumber = document.forms["application"]["cnumber"].value;
     var uid = document.forms["application"]["uid"].value;
@@ -29,14 +32,21 @@ function form_validate_school() {
     }
     
 }
-function form_validate_participant() {
+
+// performs validation of the participant names on the second form
+function formValidateParticipant() {
     var inputNames = document.querySelectorAll("input#name");
     for(var i = 0; i < inputNames.length; i++) {
         var name = inputNames[i].value;
-        if(!name_validate(name) || name == null || name == "") {
+        if(!nameValidate(name) || name == null || name == "") {
             alert("Invalid participant name. Participant name should always begin with a capital letter.");
             return false;
         }
     }
     return true;
+}
+
+// displays error message upon uid mismatch
+function uidMismatch() {
+    alert("The unique id that you've provided doesn't match the id that have been assigned to your school. Please make sure that you have entered the valid unique id that has been provided to your school by our team.");
 }
