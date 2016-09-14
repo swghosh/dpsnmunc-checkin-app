@@ -36,7 +36,8 @@ $schools = array();
         </header>
         <div class="content1">
             <br>
-            <form id="application" method="POST" action="schooldel/index.php">
+            <script src="formvalidate.js"></script>
+            <form id="application" method="POST" action="schooldel/index.php" onsubmit="return form_validate_school()">
                 <label for="school">Your school's name</label><br>
                 <select name="school">
                     <?php
