@@ -57,7 +57,7 @@ if(mysqli_num_rows($res) != 1) {
         </header>
         <div class="content1">
             <br>
-            <form id="application" method="POST" action="checkin.php">
+            <form id="application" method="POST" action="checkin.php" onsubmit="return form_validate_participant()">
                 <?php
                 $string = "<label for=\"name\" id=\"name\">Name</label><br>
                 <input type=\"text\" name=\"name[]\" placeholder=\"full name\" id=\"name\"><br><br>

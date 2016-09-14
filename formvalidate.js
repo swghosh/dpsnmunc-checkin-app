@@ -29,3 +29,14 @@ function form_validate_school() {
     }
     
 }
+function form_validate_participant() {
+    var inputNames = document.querySelectorAll("input#name");
+    for(var i = 0; i < inputNames.length; i++) {
+        var name = inputNames[i].value;
+        if(!name_validate(name) || name == null || name == "") {
+            alert("Invalid participant name. Participant name should always begin with a capital letter.");
+            return false;
+        }
+    }
+    return true;
+}
