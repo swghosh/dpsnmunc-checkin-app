@@ -59,7 +59,7 @@ if(mysqli_num_rows($res) != 1) {
             <br>
             <script src="../formvalidate.js"></script>
             <form id="application" method="POST" action="checkin.php" onsubmit="return formValidateParticipant()">
-                <span><sup>*</sup><small>Please fill this form carefully.<br>Do make sure to provide correct spellings for the partipant names and their respective events.<br>Please double-check all information before checking in.</small></span>
+                <span><sup>*</sup><small>Please fill in this form carefully.<br>Make sure that you provide us correct spellings for the partipant names and their respective events.<br>Please double-check all information before checking in.</small></span>
                 <br><br>
                 <?php
                 $string = "<label for=\"name\" id=\"name\">Name</label><br>
