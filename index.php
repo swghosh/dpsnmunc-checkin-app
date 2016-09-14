@@ -1,11 +1,11 @@
 <?php
 include_once('db.php');
-$sql = "SELECT * FROM `schools` ORDER by `name`;";
+$sql = "SELECT `name` FROM `schools` ORDER by `name`;";
 $res = mysqli_query($db, $sql);
 $schools = array();
 $ctr = 0;
-while($ar = mysqli_fetch_row($res)) {
-    $schools[$ctr++] = $ar['name'];
+while($row = mysqli_fetch_row($res, MYSQLI_NUM)) {
+    $schools[$ctr++] = $row[0];
 }
 ?>
 <!DOCTYPE html>
