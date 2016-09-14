@@ -3,10 +3,6 @@ include_once('db.php');
 $sql = "SELECT `name` FROM `schools` ORDER by `name`;";
 $res = mysqli_query($db, $sql);
 $schools = array();
-$ctr = 0;
-while($row = mysqli_fetch_row($res, MYSQLI_NUM)) {
-    $schools[$ctr++] = $row[0];
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,8 +40,9 @@ while($row = mysqli_fetch_row($res, MYSQLI_NUM)) {
                 <label for="school">Your school's name</label><br>
                 <select name="school">
                     <?php
-                        for($i = 0; $i < $ctr; $i++) {
-                            $str = "<option value=\"".$schools[i]."\">".$schools[$i]."</option>";
+                        while($row = mysqli_fetch_array($res)) {
+                            $school = $row['name'];
+                            $str = "<option value=\"".$school."\">".$school."</option>";
                             echo $str."\n";
                         }
                     ?>
