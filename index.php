@@ -12,7 +12,6 @@ $schools = array();
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <meta name="theme-color" content="#336">
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     </head>
     <body>
         <header>
@@ -70,8 +69,6 @@ $schools = array();
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
         <script src="base.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script src="suggestion.js"></script>
         <?php
             if(isset($_GET['uidmismatch'])) {
                 echo "<script>uidMismatch();</script>\n";
