@@ -18,7 +18,7 @@ function form_validate_school() {
     
     //Unique id validation
     if(uid == null || uid == "" || uid.length != 5 || uid.charAt(0) != "S") {
-        alert("Invalid unique id. Please entered the valid unique id that has been provide to your school by our team.");
+        alert("Invalid unique id. Please make sure that you have entered the valid unique id that has been provided to your school by our team.");
         return false;
     }
     
