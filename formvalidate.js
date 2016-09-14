@@ -10,14 +10,8 @@ function form_validate_school() {
     var cnumber = document.forms["application"]["cnumber"].value;
     var uid = document.forms["application"]["uid"].value;
     
-    //Contact number validation
-    if(cnumber == null || cnumber == "" || cnumber.length != 10) {
-        alert("Invalid contact number. Contact number should comprise exactly of 10 digits.");
-        return false;
-    }
-    
     //Participation size validation
-    if(number == null || number == "" || number.length != 10) {
+    if(number == null || number == "" || parseInt(number) >= 30) {
         alert("Invalid participation size. Participation size is inclusive of number of faculty advisors and should be less than 30.");
         return false;
     }
@@ -27,4 +21,11 @@ function form_validate_school() {
         alert("Invalid unique id. Please entered the valid unique id that has been provide to your school by our team.");
         return false;
     }
+    
+    //Contact number validation
+    if(cnumber == null || cnumber == "" || cnumber.length != 10) {
+        alert("Invalid contact number. Contact number should comprise exactly of 10 digits.");
+        return false;
+    }
+    
 }
