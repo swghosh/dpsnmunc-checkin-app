@@ -14,8 +14,8 @@ if(empty($_POST['name']) || empty($_POST['number']) || empty($_POST['school']) |
     form_error();
 }
 
-$number = htmlspecialchars($_POST['number']);
-$school = htmlspecialchars($_POST['school']);
+$number = mysqli_real_escape_string($db, htmlspecialchars($_POST['number']));
+$school = mysqli_real_escape_string($db, htmlspecialchars_decode($_POST['school']));
 ?>
 <!doctype html>
 <html>

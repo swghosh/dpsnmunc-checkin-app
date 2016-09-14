@@ -41,7 +41,7 @@ $schools = array();
                 <select name="school">
                     <?php
                         while($row = mysqli_fetch_array($res)) {
-                            $school = $row['name'];
+                            $school = htmlspecialchars($row['name']);
                             $str = "<option value=\"".$school."\">".$school."</option>";
                             echo $str."\n";
                         }
@@ -49,10 +49,14 @@ $schools = array();
                 </select><br><br>
                 <label for="number">Number of participants</label><br>
                 <input type="number" name="number" placeholder="size"><br><br>
+                <span><sup>*</sup><small>Participation size is inclusive of faculty advisors.</small></span>
+                <br><br>
                 <label for="uid">Provided Unique ID</label><br>
                 <input type="password" name="uid" placeholder="unique id"><br><br>
                 <label for="cnumber">Your contact number</label><br>
                 +91<input type="number" name="cnumber" placeholder="contact number"><br><br>
+                <span><sup>*</sup><small>Faculty advisor's contact number should be used.</small></span>
+                <br><br>
                 <button class="button" type="submit"> proceed </button>
             </form>
             <br>

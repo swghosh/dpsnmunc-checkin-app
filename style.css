@@ -152,6 +152,13 @@ body {
     font-size: 140%;
     font-family: 'Raleway';
 }
+.content1 span {
+    font-size: 80%;
+    color: red;
+}
+.content1 span small {
+    color: #fff;
+}
 .button {
     font-size: 70%;
     font-family: inherit;
