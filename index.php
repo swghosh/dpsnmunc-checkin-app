@@ -1,3 +1,13 @@
+<?php
+include_once('../db.php');
+$sql = "SELECT * FROM `schools` ORDER by `name`;";
+$res = mysqli_query($db, $sql);
+$schools = array();
+$ctr = 0;
+while($ar = mysqli_fetch_row($res)) {
+    $schools[$ctr++] = $ar['name'];
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,7 +42,14 @@
             <br>
             <form id="application" method="POST" action="schooldel/index.php">
                 <label for="school">Your school's name</label><br>
-                <input type="text" name="school" id="schools" placeholder="school"><br><br>
+                <select name="school">
+                    <?php
+                        for($i = 0; $i < $ctr; $i++) {
+                            $str = "<option value=\"".$schools[i]."\">".$schools[$i]."</option>";
+                            echo $str."\n";
+                        }
+                    ?>
+                </select><br><br>
                 <label for="number">Number of participants</label><br>
                 <input type="number" name="number" placeholder="size"><br><br>
                 <label for="uid">Provided Unique ID</label><br>
