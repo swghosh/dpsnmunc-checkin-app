@@ -26,6 +26,7 @@ $school = mysqli_real_escape_string($db, htmlspecialchars_decode($_POST['school'
         <meta name="theme-color" content="#336">
     </head>
     <body>
+      <small><?php date_default_timezone_set('Asia/Kolkata'); echo date('d/m/Y h:i:s'); ?></small>
       <h1>Infinnovation'16 check-in pass!</h1>
       <ul>
         <li><span>School Participation</span></li>
