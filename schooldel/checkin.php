@@ -23,7 +23,6 @@ $school = mysqli_real_escape_string($db, htmlspecialchars_decode($_POST['school'
         <title>Infinnovation'16 e-Check-In Pass</title>
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" href="../style2.css" type="text/css" />
-        <meta name="theme-color" content="#336">
     </head>
     <body>
       <small><?php date_default_timezone_set('Asia/Kolkata'); echo date('d/m/Y h:i:s'); ?></small>
