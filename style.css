@@ -106,12 +106,11 @@ body {
 .content1 {
     overflow-x: auto;
     min-width: 100%;
-    background-color: #236;;
+    background-color: rgb(16, 41, 70);
     color: #fff;
     background-attachment: fixed;
     min-height: 100vh;
     height: 120%;
-    text-align: center;
 }
 .foot {
     width: 100%;
@@ -144,12 +143,12 @@ body {
 }
 .content1 form {
     margin: 6%;
-    font-size: 140%;
+    font-size: 120%;
     font-family: 'Raleway';
 }
 .content1 p {
     margin: 6%;
-    font-size: 140%;
+    font-size: 120%;
     font-family: 'Raleway';
 }
 .content1 p#error {
@@ -167,7 +166,7 @@ body {
     font-size: 70%;
     font-family: inherit;
     border-radius: 5px;
-    background-color: rgba(30%, 30%, 30%, 0.6);
+    background-color: rgba(30%, 30%, 30%, 0.2);
     font-size: 120%;
     color: #fff;
     border-color: #000;
@@ -175,23 +174,27 @@ body {
 input[type=text] {
     border: none;
     border-bottom: 2px solid #fff;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(100%, 100%, 100%, 0.05);
     font-family: 'Raleway';
     font-size: 110%;
-
+    border-radius: 2%;
+    text-align: center;
 }
 input[type=password] {
     border: none;
     border-bottom: 2px solid #fff;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(100%, 100%, 100%, 0.05);
     font-family: 'Raleway';
     font-size: 110%;
-
+    border-radius: 2%;
+    text-align: center;
 }
 input[type=number] {
     border: none;
     border-bottom: 2px solid #fff;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(100%, 100%, 100%, 0.05);
     font-family: 'Raleway';
     font-size: 110%;
+    border-radius: 2%;
+    text-align: center;
 }
