@@ -85,7 +85,6 @@ if(mysqli_num_rows($res) != 1) {
         </div>
         <footer>
             <div class="foot">
-                <br>
                 <br>&copy; Infinnovation'16.<br><a href="http://infinnovation.co/" target="_system">www.infinnovation.co</a><br>Made with <span class="heart">&hearts;</span> and JavaScript.<br><br>
             </div>
         </footer>
