@@ -67,7 +67,7 @@ $schools = array();
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script src="base.js"></script>
+        <script async src="base.js"></script>
         <?php
             if(isset($_GET['uidmismatch'])) {
                 echo "<script>uidMismatch();</script>\n";

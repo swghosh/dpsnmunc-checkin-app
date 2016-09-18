@@ -152,6 +152,10 @@ body {
     font-size: 140%;
     font-family: 'Raleway';
 }
+.content1 p#error {
+    text-align: left;
+    font-family: monospace;
+}
 .content1 span {
     font-size: 80%;
     color: red;
