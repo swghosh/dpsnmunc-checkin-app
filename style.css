@@ -109,7 +109,6 @@ body {
     background-color: rgb(16, 41, 70);
     color: #fff;
     background-attachment: fixed;
-    min-height: 100vh;
     height: 120%;
 }
 .foot {
