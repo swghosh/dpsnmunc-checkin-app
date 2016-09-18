@@ -31,7 +31,7 @@ if(mysqli_num_rows($res) != 1) {
     <head>
         <meta charset="UTF-8">
         <title>Infinnovation'16 e-Check-In</title>
-        <meta name="viewport" content="width=device-width, user-scalable=yes">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../style.css" type="text/css" />
         <meta name="theme-color" content="#336">
     </head>

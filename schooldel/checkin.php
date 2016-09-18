@@ -21,7 +21,7 @@ $school = mysqli_real_escape_string($db, htmlspecialchars_decode($_POST['school'
 <html>
     <head>
         <title>Infinnovation'16 e-Check-In Pass</title>
-        <meta name="viewport" content="width=device-width, user-scalable=yes">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../style2.css" type="text/css" />
     </head>
     <body>

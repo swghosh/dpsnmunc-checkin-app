@@ -172,29 +172,29 @@ body {
     border-color: #000;
 }
 input[type=text] {
-    border: none;
+    border: transparent;
     border-bottom: 2px solid #fff;
     background-color: rgba(100%, 100%, 100%, 0.05);
     font-family: 'Raleway';
     font-size: 110%;
-    border-radius: 2%;
+    border-radius: 5%;
     text-align: center;
 }
 input[type=password] {
-    border: none;
+    border: transparent;
     border-bottom: 2px solid #fff;
     background-color: rgba(100%, 100%, 100%, 0.05);
     font-family: 'Raleway';
     font-size: 110%;
-    border-radius: 2%;
+    border-radius: 5%;
     text-align: center;
 }
 input[type=number] {
-    border: none;
+    border: transparent;
     border-bottom: 2px solid #fff;
     background-color: rgba(100%, 100%, 100%, 0.05);
     font-family: 'Raleway';
     font-size: 110%;
-    border-radius: 2%;
+    border-radius: 5%;
     text-align: center;
 }
