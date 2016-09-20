@@ -197,3 +197,6 @@ input[type=number] {
     border-radius: 5%;
     text-align: center;
 }
+input:focus {
+    color: #fff;
+}
