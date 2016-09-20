@@ -171,6 +171,7 @@ body {
     border-color: #000;
 }
 input[type=text] {
+    color: #eee;
     border: transparent;
     border-bottom: 2px solid #fff;
     background-color: rgba(100%, 100%, 100%, 0.05);
@@ -180,6 +181,7 @@ input[type=text] {
     text-align: center;
 }
 input[type=password] {
+    color: #eee;
     border: transparent;
     border-bottom: 2px solid #fff;
     background-color: rgba(100%, 100%, 100%, 0.05);
@@ -189,6 +191,7 @@ input[type=password] {
     text-align: center;
 }
 input[type=number] {
+    color: #eee;
     border: transparent;
     border-bottom: 2px solid #fff;
     background-color: rgba(100%, 100%, 100%, 0.05);
