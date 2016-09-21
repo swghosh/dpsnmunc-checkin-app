@@ -15,7 +15,7 @@ function formValidateSchool() {
     var uid = document.forms["application"]["uid"].value;
     
     // Participation size validation
-    if(number == null || number == "" || parseInt(number) >= 30) {
+    if(number == null || number == "" || parseInt(number) >= 30 || parseInt(number) <= 0) {
         alert("Invalid participation size. Participation size is inclusive of number of faculty advisors and should be less than 30.");
         return false;
     }
