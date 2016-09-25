@@ -12,6 +12,10 @@ $schools = array();
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <meta name="theme-color" content="#336">
+        <meta name="author" content="SwG Ghosh">
+        <meta name="description" content="Infinnovation e Check In application. Generate your Infinnovation'16 entry pass from here.">
+        <meta name="og:image" content="https://www.infinnovation.co/echeckinlandscape.png">
+        <meta name="og:url" content="https://echeckin.infinnovation.co/">
     </head>
     <body>
         <header>
