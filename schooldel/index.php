@@ -41,7 +41,7 @@ if(mysqli_num_rows($res) != 1) {
                 <div class="header">
                     <br/>
                     <div id="imageatr"><img src="../images/logo.png"></div>
-                    <h1>Infinnovation<br>e-Check-In <sup><small id="beta">&nbsp;beta&nbsp;</small></sup><br/><span id="tagline">&quot;Welcome, participants!&quot;</span></h1>
+                    <h1>Infinnovation<br>e-Check-In<br/><span id="tagline">&quot;Welcome, participants!&quot;</span></h1>
                     <br/>
                 </div>
             </div>
