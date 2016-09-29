@@ -1,8 +1,7 @@
-<img src="https://s14.postimg.org/m8etc34rl/echeckin_infinnovation_co_i_Phone_6_Plus.png">
-# infinnovation-checkin-app
-## Infinnovation e-check-in Application
-Source code of the web app written in php with mySQL database support.
+<img src="https://s12.postimg.org/kmqg47zpp/echeckin_infinnovation_co_i_Phone_6_Plus.png">
+# Infinnovation E-Check-In Application
+[https://echeckin.infinnovation.co]https://echeckin.infinnovation.co
 
-Hosted as an [openshift](https://openshift.com) application.
+The participating schools are required to use this app to be able to check into Delhi Public School Newtown's eco-commerce fest, Infinnovation. The check-in procedure involves providing the Unique ID assigned to the respective school and the details of all the participants of the same school. 
 
-[Web check-in](http://checkin.dpsnmunc.in) will be available for use to participant schools only on 5th October 2016.
+Check-in passes generated from the application will be only valid 5th of October 12:00 am and onwards. Participating schools are requested to save a screenshot of the generated check-in pass from the application and produce it at our front desk so as to be given ID cards.
