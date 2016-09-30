@@ -203,3 +203,82 @@ input[type=number] {
 input:focus {
     color: #fff;
 }
+.content1 h1 {
+    text-align: center;
+    font-family: 'Amatic SC';
+    font-size: 300%;
+    text-decoration: underline;
+}
+.content1 ul {
+    margin-left: 0%;
+    margin-right: 5%;
+}
+.content1 li {
+    font-family: 'Raleway';
+    margin: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 120%;
+    margin-bottom: 2%;
+}
+.content1 table {
+    display: inline-table;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 90%;
+    font-family: 'Raleway';
+}
+.content1 tr:nth-child(odd) {
+    background-color: #222;
+}
+.content1 tr:nth-child(even) {
+    background-color: #f1f1f1;
+    color: #000;
+}
+.content1 th {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.content1 td {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.content1 td a {
+    color: inherit;
+}
+.content1 td a:hover {
+    text-decoration: none;
+}
+table#news {
+    max-width: 700px;
+}
+table#news th {
+	display: none;
+}
+table#news tr {
+	display: block;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+table#news td:nth-child(odd) {
+	display: flex;
+	text-align: left;
+	font-size: 70%;
+}
+table#news td:nth-child(even) {
+	text-align: left;
+	display: flex;
+	font-size: 100%;
+	padding: 4%;
+}
+.content1 > article#news {
+    display: block;
+    text-align: center;
+}

@@ -32,8 +32,8 @@ $schools = array();
                     <li id="togglemenu"><a href="#menu" id="menubutton">&equiv;</a></li>
                     <li id="flogo"><a class="flogolink">infinnovation<br><small>e-check-in</small></a></li>
                     <li><a href="/">application home<br><small>checkin</small></a></li>
-                    <li><a href="https://facebook.com/infinnovation16" target="_system">facebook page<br><small>fb.com/infinnovation16</small></a></li>
-                    <li><a href="http://www.infinnovation.co" target="_system">our website<br><small>www.infinnovation.co</small></a></li>
+                    <li><a href="uidrequest.html">unique id<br><small>procedure</small></a></li>
+                    <li><a href="rules.html">general rules<br><small>and regulations</small></a></li>
 	            </ul>
             </div>
         </header>
