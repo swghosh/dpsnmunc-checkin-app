@@ -48,3 +48,13 @@ $school = mysqli_real_escape_string($db, htmlspecialchars_decode($_POST['school'
       <p>Thank You for your co-operation!</p>
     </body>
 </html>
+<?php
+include('../flockincominghook.php');
+$string = "INFINNOVATION'16 CHECK-IN SUCCESSFUL\\n".$school."\\n".$number."\\n";
+for($i = 0; $i < sizeof($_POST['name']); $i++) {
+  $name = $_POST['name'][$i];
+  $committee = $_POST['committee'][$i];
+  $string = $string." ".$name." - ".$committee."\\n";
+}
+flock_group_post($string);
+?>
