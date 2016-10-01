@@ -110,6 +110,7 @@ body {
     color: #fff;
     background-attachment: fixed;
     height: 120%;
+    min-height: 90vh;
 }
 .foot {
     width: 100%;
