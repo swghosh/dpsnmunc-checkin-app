@@ -163,7 +163,6 @@ body {
     color: #fff;
 }
 .button {
-	box-shadow: 0 0 20px #000;
     font-size: 70%;
     font-family: inherit;
     border-radius: 5px;
@@ -171,11 +170,13 @@ body {
     font-size: 120%;
     color: #fff;
     border-color: #000;
+	transition: all 0.5s;
+	transition-timing-function: ease-in-out;
 }
 .button:hover {
+	box-shadow: 0 0 20px #000;
 	background-color: #ddd;
-	color: #000;
-	box-shadow: 0 0 20px #999;
+	color: #333;
 }
 input[type=text] {
     color: #eee;
