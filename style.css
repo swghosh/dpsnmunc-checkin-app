@@ -162,6 +162,7 @@ body {
     color: #fff;
 }
 .button {
+	box-shadow: 0 0 20px #000;
     font-size: 70%;
     font-family: inherit;
     border-radius: 5px;
@@ -169,6 +170,11 @@ body {
     font-size: 120%;
     color: #fff;
     border-color: #000;
+}
+.button:hover {
+	background-color: #ddd;
+	color: #000;
+	box-shadow: 0 0 20px #999;
 }
 input[type=text] {
     color: #eee;
@@ -230,6 +236,7 @@ input:focus {
     margin-right: 0;
     font-size: 90%;
     font-family: 'Raleway';
+    box-shadow: 0px 0px 20px #232323;
 }
 .content1 tr:nth-child(odd) {
     background-color: #222;
@@ -257,12 +264,14 @@ input:focus {
     text-decoration: none;
 }
 table#news {
+    box-shadow: none;
     max-width: 700px;
 }
 table#news th {
 	display: none;
 }
 table#news tr {
+    box-shadow: 0px 0px 20px #000;
 	display: block;
 	margin-left: 5%;
 	margin-right: 5%;
