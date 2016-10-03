@@ -33,8 +33,8 @@ $school = mysqli_real_escape_string($db, htmlspecialchars_decode($_POST['school'
         <li><span><?php echo $number; ?></span></li>
         <?php
         for($i = 0; $i < sizeof($_POST['name']); $i++) {
-          $name = $_POST['name'][$i];
-          $committee = $_POST['committee'][$i];
+          $name = mysqli_real_escape_string($db, htmlspecialchars($_POST['name'][$i]));
+          $committee = mysqli_real_escape_string($db, htmlspecialchars($_POST['committee'][$i]));
           $sql = "INSERT INTO `participants` (`name`,`number`,`school`,`committee`) VALUES ('$name','$number','$school','$committee');";
           if(mysqli_query($db, $sql) == false) {
               die("Form Data Submission Error.");
@@ -49,12 +49,16 @@ $school = mysqli_real_escape_string($db, htmlspecialchars_decode($_POST['school'
     </body>
 </html>
 <?php
+
 include('../flockincominghook.php');
+
 $string = "New Check-In\nSchool Participation\n".$school."\n".$number."\n";
 for($i = 0; $i < sizeof($_POST['name']); $i++) {
-  $name = $_POST['name'][$i];
-  $committee = $_POST['committee'][$i];
-  $string = $string." ".$name." - ".$committee."\n";
+    $name = mysqli_real_escape_string($db, htmlspecialchars($_POST['name'][$i]));
+    $committee = mysqli_real_escape_string($db, htmlspecialchars($_POST['committee'][$i]));
+    $string = $string." ".$name." - ".$committee."\n";
 }
+
+// post the data to the attached flock group through Flock API
 flock_group_post($string);
 ?>

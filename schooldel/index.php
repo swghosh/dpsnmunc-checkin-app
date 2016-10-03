@@ -3,6 +3,8 @@ function form_error() {
     die(header('Location: ../wrong.html'));
 }
 
+include_once('../db.php');
+
 //Form Validation
 if(isset($_POST['school']) == false || isset($_POST['number']) == false || isset($_POST['cnumber']) == false || isset($_POST['uid']) == false) {
     form_error();
@@ -13,14 +15,18 @@ if(empty($_POST['school']) || empty($_POST['number']) || empty($_POST['cnumber']
 }
 
 $number = intval(htmlspecialchars($_POST['number']));
-$school = htmlspecialchars($_POST['school']);
-$cnumber = htmlspecialchars($_POST['cnumber']);
+$school = mysqli_real_escape_string($db, htmlspecialchars($_POST['school']));
+$cnumber = mysqli_real_escape_string($db, htmlspecialchars($_POST['cnumber']));
 
 //Form unique id validation
-include_once('../db.php');
+
 $uid = htmlspecialchars($_POST['uid']);
-$sql = "SELECT * FROM schools WHERE uid = '$uid' AND name = '$school';";
+
+$sql = "SELECT * FROM schools WHERE uid = '$uid' AND name = \"$school\";";
 $res = mysqli_query($db, $sql);
+
+//In case of unique id mismatch redirect
+
 if(mysqli_num_rows($res) != 1) {
     die(header('Location: ../?uidmismatch'));
 }
@@ -62,6 +68,9 @@ if(mysqli_num_rows($res) != 1) {
                 <span><sup>*</sup><small>Please fill in this form carefully.<br>Make sure that you provide us correct spellings for the partipant names and their respective events.<br>Please double-check all information before checking in.</small></span>
                 <br><br>
                 <?php
+                
+                // provide form fields based on number of partipants (name of participant, event)
+                
                 $string = "<label for=\"name\" id=\"name\">Name</label><br>
                 <input type=\"text\" name=\"name[]\" placeholder=\"full name\" id=\"name\"><br><br>
                 <label for=\"committee\">Event</label><br>
