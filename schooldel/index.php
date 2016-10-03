@@ -15,8 +15,8 @@ if(empty($_POST['school']) || empty($_POST['number']) || empty($_POST['cnumber']
 }
 
 $number = intval(htmlspecialchars($_POST['number']));
-$school = mysqli_real_escape_string($db, htmlspecialchars($_POST['school']));
-$cnumber = mysqli_real_escape_string($db, htmlspecialchars($_POST['cnumber']));
+$school = htmlspecialchars($_POST['school']);
+$cnumber = htmlspecialchars($_POST['cnumber']);
 
 //Form unique id validation
 
