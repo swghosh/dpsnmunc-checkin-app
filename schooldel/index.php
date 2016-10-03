@@ -67,6 +67,7 @@ if(mysqli_num_rows($res) != 1) {
                 <label for=\"committee\">Event</label><br>
                 <select name=\"committee[]\">
                     <option value=\"faculty\">Faculty Advisor</option>
+                    <option value=\"studentrep\">Student Representative</option>
                     <option value=\"infiinvest\">Infi-Invest</option>
                     <option value=\"infilaunch\">Infi-Launch</option>
                     <option value=\"infiepaper\">Infi-E-Paper</option>
