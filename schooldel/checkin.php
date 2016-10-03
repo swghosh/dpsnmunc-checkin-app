@@ -14,8 +14,8 @@ if(empty($_POST['name']) || empty($_POST['number']) || empty($_POST['school']) |
     form_error();
 }
 
-$number = mysqli_real_escape_string($db, htmlspecialchars($_POST['number']));
-$school = mysqli_real_escape_string($db, htmlspecialchars($_POST['school']));
+$number = htmlspecialchars($_POST['number']);
+$school = htmlspecialchars($_POST['school']);
 ?>
 <!doctype html>
 <html>
@@ -35,7 +35,7 @@ $school = mysqli_real_escape_string($db, htmlspecialchars($_POST['school']));
         for($i = 0; $i < sizeof($_POST['name']); $i++) {
           $name = mysqli_real_escape_string($db, htmlspecialchars($_POST['name'][$i]));
           $committee = mysqli_real_escape_string($db, htmlspecialchars($_POST['committee'][$i]));
-          $sql = "INSERT INTO `participants` (`name`,`number`,`school`,`committee`) VALUES ('$name','$number','$school','$committee');";
+          $sql = "INSERT INTO `participants` (`name`,`number`,`school`,`committee`) VALUES ('$name','$number','".mysqli_real_escape_string($db, $school)."','".mysqli_real_escape_string($db, $committee)."');";
           if(mysqli_query($db, $sql) == false) {
               die("Form Data Submission Error.");
           }
@@ -54,8 +54,8 @@ include('../flockincominghook.php');
 
 $string = "New Check-In\nSchool Participation\n".$school."\n".$number."\n";
 for($i = 0; $i < sizeof($_POST['name']); $i++) {
-    $name = mysqli_real_escape_string($db, htmlspecialchars($_POST['name'][$i]));
-    $committee = mysqli_real_escape_string($db, htmlspecialchars($_POST['committee'][$i]));
+    $name = htmlspecialchars($_POST['name'][$i]);
+    $committee = htmlspecialchars($_POST['committee'][$i]);
     $string = $string." ".$name." - ".$committee."\n";
 }
 
