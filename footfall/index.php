@@ -9,7 +9,7 @@ $number = mysqli_num_rows($res);
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Infinnovation'16 Footfall</title>
+        <title>Infinnovation Footfall</title>
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <link rel="stylesheet" href="../style2.css" type="text/css" />
         <meta name="theme-color" content="#336">

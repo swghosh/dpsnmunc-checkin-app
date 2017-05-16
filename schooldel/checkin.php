@@ -20,13 +20,13 @@ $school = htmlspecialchars($_POST['school']);
 <!doctype html>
 <html>
     <head>
-        <title>Infinnovation'16 e-Check-In Pass</title>
+        <title>Infinnovation e-Check-In Pass</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../style2.css" type="text/css" />
     </head>
     <body>
       <small><?php date_default_timezone_set('Asia/Kolkata'); echo date('d/m/Y h:i:s'); ?></small>
-      <h1>Infinnovation'16 check-in pass!</h1>
+      <h1>Infinnovation check-in pass!</h1>
       <ul>
         <li><span>School Participation</span></li>
         <li><span><?php echo $school; ?></span></li>

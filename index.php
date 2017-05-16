@@ -8,12 +8,12 @@ $schools = array();
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Infinnovation'16 e-Check-In</title>
+        <title>Infinnovation e-Check-In</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <meta name="theme-color" content="#336">
         <meta name="author" content="SwG Ghosh">
-        <meta name="description" content="Infinnovation e Check In application. Generate your Infinnovation'16 entry pass from here.">
+        <meta name="description" content="Infinnovation e Check In application. Generate your Infinnovation entry pass from here.">
         <meta name="og:image" content="https://www.infinnovation.co/echeckinlandscape.png">
         <meta name="og:url" content="https://echeckin.infinnovation.co/">
     </head>
@@ -67,7 +67,7 @@ $schools = array();
         </div>
         <footer>
             <div class="foot">
-                <br>&copy; Infinnovation'16.<br>Made with <span class="heart">&hearts;</span> by <a href="https://facebook.com/swghosh" target="_blank" onclick="window.open('https://www.github.com/swghosh');">Swarup Ghosh</a>.<br>
+                <br>&copy; Infinnovation.<br>Made with <span class="heart">&hearts;</span> by <a href="https://facebook.com/swghosh" target="_blank" onclick="window.open('https://www.github.com/swghosh');">Swarup Ghosh</a>.<br>
                 <a href="https://twitter.com/SwG_Ghosh" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @SwG_Ghosh</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br><br>
             </div>

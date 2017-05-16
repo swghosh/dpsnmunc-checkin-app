@@ -36,7 +36,7 @@ if(mysqli_num_rows($res) != 1) {
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Infinnovation'16 e-Check-In</title>
+        <title>Infinnovation e-Check-In</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../style.css" type="text/css" />
         <meta name="theme-color" content="#336">
@@ -95,7 +95,7 @@ if(mysqli_num_rows($res) != 1) {
         </div>
         <footer>
             <div class="foot">
-                <br>&copy; Infinnovation'16.<br>Made with <span class="heart">&hearts;</span> and JavaScript.<br><br>
+                <br>&copy; Infinnovation.<br>Made with <span class="heart">&hearts;</span> and JavaScript.<br><br>
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
